@@ -1,2 +1,3 @@
-# react-color-palette
-Created with CodeSandbox
+# React Color Palettes
+
+Under Construction 
