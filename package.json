@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@material-ui/core": "4.11.2",
     "chroma-js": "2.1.0",
     "rc-slider": "9.7.1",
     "react": "17.0.0",
