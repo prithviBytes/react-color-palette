@@ -108,4 +108,5 @@
 .copy-message p {
   font-size: 2rem;
   font-weight: 100;
+  text-transform: uppercase;
 }
