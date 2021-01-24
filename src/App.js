@@ -5,6 +5,7 @@ import PaletteList from "./PaletteList";
 import SingleColorPalette from "./SingleColorPalette";
 import { Switch, Route } from "react-router-dom";
 import { generatePalette } from "./colorHelpers";
+import "./index.css";
 class App extends Component {
   findPalette(id) {
     return seedColors.find(function (palette) {
