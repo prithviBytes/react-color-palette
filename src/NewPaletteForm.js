@@ -113,10 +113,11 @@ class NewPaletteForm extends Component {
       [evt.target.name]: evt.target.value
     });
   }
-  handleSubmit(newPaletteName) {
-    let newName = newPaletteName;
+  handleSubmit(paletteInfo) {
+    let newName = paletteInfo.paletteName;
     const newPalette = {
       paletteName: newName,
+      emoji: paletteInfo.emoji,
       id: newName.toLowerCase().replace(/ /g, "-"),
       colors: this.state.colors
     };
