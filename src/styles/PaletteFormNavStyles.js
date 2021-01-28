@@ -31,6 +31,9 @@ const styles = (theme) => ({
   },
   buttons: {
     margin: "0 0.5rem"
+  },
+  hide: {
+    display: "none"
   }
 });
 
