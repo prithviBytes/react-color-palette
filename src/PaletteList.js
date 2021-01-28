@@ -22,6 +22,9 @@ class PaletteList extends Component {
               <MiniPalette
                 {...palette}
                 handleClick={() => this.goToPalette(palette.id)}
+                key={palette.id}
+                id={palette.id}
+                deletePalette={this.props.deletePalette}
               />
             ))}
           </div>
