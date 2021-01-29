@@ -15,11 +15,11 @@ export default {
     },
     [sizes.down("lg")]: {
       width: "25%",
-      height: (props) => (props.showingFullPalette ? "20%" : "10%")
+      height: (props) => (props.showingFullPalette ? "20%" : "33.3333%")
     },
     [sizes.down("md")]: {
       width: "50%",
-      height: (props) => (props.showingFullPalette ? "10%" : "10%")
+      height: (props) => (props.showingFullPalette ? "10%" : "20%")
     },
     [sizes.down("xs")]: {
       width: "100%",
@@ -107,7 +107,7 @@ export default {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "4rem",
+    fontSize: "3rem",
     transform: "scale(0.1)",
     opacity: "0",
     color: "white",
@@ -119,7 +119,10 @@ export default {
       textAlign: "center",
       marginBottom: "0",
       padding: "1rem",
-      textTransform: "uppercase"
+      textTransform: "uppercase",
+      [sizes.down("xs")]: {
+        fontSize: "4rem"
+      }
     },
     "& p": {
       fontSize: "2rem",
