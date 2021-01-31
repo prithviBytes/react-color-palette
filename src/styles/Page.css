@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .page {
   height: 100vh;
   position: fixed;
