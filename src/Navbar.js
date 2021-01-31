@@ -1,14 +1,16 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "rc-slider";
+
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import Snackbar from "@material-ui/core/Snackbar";
 import CloseIcon from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
-import { Link } from "react-router-dom";
-import "rc-slider/assets/index.css";
 import { withStyles } from "@material-ui/styles";
+
 import styles from "./styles/NavbarStyles";
+import "rc-slider/assets/index.css";
 
 class Navbar extends Component {
   constructor(props) {
@@ -33,7 +35,7 @@ class Navbar extends Component {
     });
   }
   render() {
-    const { format } = this.state;
+    const { format, open } = this.state;
     const { level, changeLevel, showSlider, classes } = this.props;
     return (
       <header className={classes.Navbar}>
@@ -64,7 +66,7 @@ class Navbar extends Component {
         </div>
         <Snackbar
           anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-          open={this.state.open}
+          open={open}
           autoHideDuration={3000}
           message={
             <span id="message-id">

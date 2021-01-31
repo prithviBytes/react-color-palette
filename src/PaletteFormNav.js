@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
-import PaletteMetaForm from "./PaletteMetaForm";
+import styles from "./styles/PaletteFormNavStyles";
+
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -10,7 +11,8 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
-import styles from "./styles/PaletteFormNavStyles";
+
+import PaletteMetaForm from "./PaletteMetaForm";
 
 class PaletteFormNav extends Component {
   constructor(props) {
@@ -38,7 +40,7 @@ class PaletteFormNav extends Component {
     });
   }
   render() {
-    const { open, classes, palettes } = this.props;
+    const { open, classes, palettes, handleSubmit } = this.props;
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -86,7 +88,7 @@ class PaletteFormNav extends Component {
           <PaletteMetaForm
             palettes={palettes}
             hideForm={this.hideForm}
-            handleSubmit={this.props.handleSubmit}
+            handleSubmit={handleSubmit}
           />
         )}
       </div>

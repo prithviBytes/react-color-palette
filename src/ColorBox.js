@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
+
 import styles from "./styles/ColorBoxStyles";
 
 class ColorBox extends Component {
@@ -41,7 +42,7 @@ class ColorBox extends Component {
             }`}
           >
             <h1>copied!</h1>
-            <p className={classes.copyText}>{this.props.background}</p>
+            <p className={classes.copyText}>{background}</p>
           </div>
           <div className="copy-container">
             <div className={classes.boxContent}>
