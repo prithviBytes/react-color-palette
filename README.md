@@ -23,9 +23,6 @@ Color is one of the most important aspects of Designing. This App lets you use s
 ### Environment
 This App was developed on Codesandbox and Deployed Using Netlify.
 
-### Demo
-![reactColors_ DEMO](https://github.com/prithviBytes/react-color-palette/blob/main/reactColor%20Demo.mkv?raw=true)
-
 ### Try It Now
 Go to reactColors: [React Colors](https://reactcolor.netlify.app/)
 
